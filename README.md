@@ -17,7 +17,7 @@ Format GPX coordinates as floats:
 Use Google Geocoding API to get Address information based on GPS coordinates:
 =============================================================================
 
-    1. create GeoCoding API credentials at google page:
+   1.  create GeoCoding API credentials at google page:
           <https://developers.google.com/maps/documentation/geocoding/start>
 		  Activate the Google Maps Geocoding API
 
