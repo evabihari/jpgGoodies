@@ -1,21 +1,29 @@
-# jpgGoodies
+# jpgGoodies 
+This repo is a collection of information related to Metadata handling in JPG files
+
+Prerequisite:
+-------------
+
+exiftool installed and added to the PATH
+
 
 Add GPS coordinates to the JPG file based on GPX files, which contains trackings from the trip:
-======================================================================
+-----------------------------------------------------------------------------------------------
+
 `exiftool -v -geotag 'GPXFilesDir/*.gpx' '-geotime<${createdate}+<TimeZOneDiffToGMT>' <SourceJPGfilesDIR>`
 
 List metadata information from a JPG file:
-==========================================
+------------------------------------------
 
  `exiftool -s <SourceJPGFile>`
 
 Format GPX coordinates as floats:
-=================================
+---------------------------------
 
  `exiftool -c "%+.6f"  <SourceJPGFile>`
  
 Use Google Geocoding API to get Address information based on GPS coordinates:
-=============================================================================
+-----------------------------------------------------------------------------
 
    1.  create GeoCoding API credentials at google page:
           <https://developers.google.com/maps/documentation/geocoding/start>
